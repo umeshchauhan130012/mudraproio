@@ -1,0 +1,714 @@
+.flex {
+  display: flex;
+  align-items: center;
+}
+.jc_center {
+  justify-content: center;
+}
+.spaceBetween {
+  justify-content: space-between;
+}
+.profilePage {
+  width: 75vh;
+}
+.primaryColor {
+  font-weight: 500;
+  padding-left: 15px;
+  font-size: 16px;
+}
+.secondaryColor {
+  color: rgba(18, 18, 18, 0.54);
+  font-weight: 500;
+  padding-left: 39px;
+  font-size: 16px;
+}
+.thirdColor {
+  font-size: 20px;
+  padding-right: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.fourthColor {
+  color: #0164eb;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.profileContainer {
+  background-color: #ffffff;
+  border: 1px solid #d1e8ff;
+  border-radius: 10px;
+  padding: 15px;
+}
+.flexWrapper {
+  flex-wrap: wrap;
+}
+.userProfile {
+  padding-left: 30px;
+}
+.profileDetails {
+  margin: 30px 0 10px 0;
+}
+.profileWidth {
+  width: 50%;
+  padding: 12px 0;
+}
+.profileSecondRow {
+  padding-left: 8%;
+}
+.profileSecondColum {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profileContainer button {
+  background: #ecf6ff;
+  border-radius: 5px;
+  border: none;
+  color: #0164eb;
+  font-weight: 500;
+  padding: 5px 15px;
+  font-size: 14px;
+}
+.profileContainer button[class="deactive"] {
+  background: rgba(18, 18, 18, 0.35) !important;
+  color: #ffffff !important;
+  padding: 3px 15px !important;
+}
+
+.activearrowimg{
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+}
+
+.uploadProfile {
+  width: 38px;
+  height: 38px;
+  border-radius: 25px;
+  display: flex;
+  position: absolute;
+  right: -17px;
+  bottom: 6px;
+}
+.uploadProfile input {
+  opacity: 0;
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.uploadProfileform .setUserImage {
+  position: absolute;
+  padding: 2px 7px;
+  background-color: #ecf6ff;
+  color: #0164eb;
+  border-radius: 2px;
+  right: -87px;
+  bottom: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.refallhfghg {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: rgba(56, 56, 58, 0.1);
+  border-radius: 5px;
+  font-family: "Montserrat";
+  padding: 10px 12px 3px;
+}
+
+.refallhfghg > span {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 11px;
+  display: block;
+  text-align: left;
+  line-height: 1;
+}
+
+.refallhfghginner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.refallhfghginner input {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none !important;
+  line-height: 1;
+}
+
+.refallhfghginner > span {
+  display: flex;
+  padding: 0px 2px;
+  position: relative;
+  cursor: pointer;
+  top: -11px;
+}
+
+.refallhfghginner > span[data-title="copied"]:before {
+  content: attr(data-title);
+  position: absolute;
+  background-color: #00cb28;
+  font-size: 13px;
+  color: #ffffff;
+  padding: 7px 5px;
+  border-radius: 5px;
+  line-height: 1;
+  left: -63px;
+  top: 2px;
+}
+.refallhfghginner > span[data-title="copied"]:after {
+  content: "";
+  height: 0px;
+  width: 0px;
+  border: 6px solid #00cb28;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  left: -9px;
+  top: 10px;
+}
+/* css for profileEdit */
+
+.profileinput {
+  width: calc(50% - 11px);
+}
+.profileinput button {
+  position: relative;
+}
+
+.profileEdit img {
+  cursor: pointer;
+}
+.dashboard_content {
+  padding: 0px 10px;
+  padding-right: 0px;
+  margin-right: -10px;
+}
+
+.padding10 {
+  padding: 10px;
+}
+.profileid {
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+/* css for setting page */
+.settingContainer {
+  padding: 22px;
+}
+.headingM {
+  padding: 30px 40px;
+}
+.settingHeading {
+  font-weight: 400;
+}
+.settingContainer img {
+  cursor: pointer;
+}
+/* tabs menu */
+
+.pagetabber {
+  margin: 0;
+  padding: 0px 20px;
+  list-style-type: none;
+  display: flex;
+  line-height: 1.429;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px #d1e8ff;
+  position: sticky;
+  top: 90px;
+  z-index: 4;
+  width: 100%;
+}
+
+.pagetabber li a {
+  padding: 20px 18px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  color: #12121259;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.pagetabber li a:after {
+  content: "";
+  height: 4px;
+  border-radius: 5px 5px 0px 0px;
+  width: 50%;
+  position: absolute;
+  background-color: #0164eb;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  bottom: 0px;
+  opacity: 0;
+}
+
+.pagetabber li a.active:after {
+  opacity: 1;
+}
+
+.pagetabber li a.active {
+  color: #0164eb;
+}
+
+.appLink img {
+  padding: 20px 30px 20px 0px;
+}
+.settingGroup {
+  display: flex;
+}
+.settingGroup1,
+.settingGroup2 {
+  width: 50%;
+}
+.settingGroup2 {
+  text-align: center;
+}
+.mx {
+  margin: 15px 0;
+}
+.mx > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.indicatorGroup {
+  justify-content: space-between;
+}
+.indicatorItem1 {
+  color: #1dbf74;
+}
+.indicatorItem2 {
+  color: #cccccc;
+}
+.indicatorItem1::before,
+.indicatorItem2::after {
+  content: "";
+  padding: 4px;
+  background: #1dbf74;
+  border: 2px solid #1dbf74;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 40px;
+}
+.indicatorItem2::after {
+  margin-left: -10px;
+}
+.underLine {
+  border-top: 2px dashed #cccccc;
+  margin: 11px;
+}
+.indicatorItem2::after {
+  padding: 4px;
+  border: 2px solid #cccccc;
+  background: #ffffff;
+}
+.indicatorGroup .activeItem .indicatorItem1,
+.indicatorGroup .activeItem .indicatorItem2 {
+  color: #0164eb;
+}
+.indicatorGroup .activeItem .indicatorItem1::before,
+.indicatorGroup .activeItem .indicatorItem2::after {
+  border: 2px solid #0164eb;
+  background: #0164eb;
+}
+.activeUnderLine .underLine {
+  border-top: 2px dashed #0164eb;
+}
+.p {
+  padding: 10px;
+}
+.settingGroup h3,
+.settingGroup h4,
+.settingGroup p {
+  padding: 10px 0;
+}
+.settingGroup2 p {
+  padding: 10px 30px;
+}
+
+/* css for change Password */
+.changePassword button {
+  background: transparent;
+  color: #2323238a;
+}
+.changePassword button:hover {
+  background: transparent;
+}
+.changePassword .settingGroup2 {
+  padding: 0 30px;
+  text-align: left;
+}
+.changePasswordGroup {
+  display: flex;
+  padding-top: 20px;
+}
+.changePassword p {
+  padding: 5px;
+}
+.changePassword h3 {
+  padding: 10px;
+}
+/* Css for kyc */
+.uploadDoc {
+  background-color: transparent;
+  border: 1px solid;
+  border-color: rgba(56, 56, 58, 0.1);
+  border-radius: 5px;
+  font-family: "Montserrat";
+  position: relative;
+}
+.uploadDoc input {
+  padding: 8px 10px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 100;
+  opacity: 0;
+}
+.uploadDoc > div {
+  padding: 12px 9px;
+  border-radius: 5px;
+  background: #ecf6ff;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  margin-top: -48px;
+  color: #0164eb;
+  font-weight: 500;
+}
+.docFile {
+  width: 100%;
+  max-width: 225px;
+  border: 1px solid rgba(56, 56, 58, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  color: #0164eb;
+}
+.kyc .mx_2 {
+  margin: 30px 0;
+}
+
+/* support  */
+.supportPage .settingContainer {
+  padding: 0px;
+}
+.supportPage .active .settingContainer {
+  align-items: inherit;
+}
+.supportPage .profileWidth:first-child {
+  padding: 22px 0px 22px 22px;
+}
+.supportPage .profileWidth:last-child {
+  padding: 12px 22px 22px 0px;
+}
+.messagebottom .profileinput {
+  width: 60%;
+}
+
+.profileinput.profileinputchat {
+  width: calc(100% - 100px);
+  margin: 0px;
+}
+.uploadProfileform {
+  position: relative;
+}
+.fileuplodesty {
+  position: relative;
+}
+.fileuplodesty img {
+  border-radius: 50%;
+}
+/* account setting */
+
+.profileinputup {
+  width: 50%;
+  padding-right: 11px;
+}
+
+.profileinputup + .profileinputup {
+  padding-left: 11px;
+}
+
+.hasid {
+  width: 100%;
+  border-top: 1px dashed #dddddd;
+  padding-top: 16px;
+  margin-top: 20px;
+}
+
+.hasidtext {
+  max-width: 100%;
+  word-break: break-all;
+  font-size: 14px;
+}
+
+.hasidinner {
+  display: flex;
+}
+
+.idicon {
+  width: 23px;
+}
+
+.idicon svg {
+  fill: rgb(18, 18, 18);
+  fill-opacity: 0.54;
+}
+
+.teidwrp {
+  padding-left: 18px;
+  width: 100%;
+}
+
+.idlabel {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.kyctitle {
+  font-size: 20px;
+  padding-right: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.kysdataget {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.kycdataitem {
+  width: 100%;
+  padding-bottom: 20px;
+  color: #787878;
+  font-size: 17px;
+}
+
+.kycdataitemimg {
+  border: 2px solid #dddddd;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  max-width: 170px;
+}
+
+.kycdataitemimg a {
+  display: block;
+  padding: 10px;
+}
+
+.kycdataitemimg + .kycdataitemimg {
+  margin-left: 10px;
+}
+.kycstatus {
+  display: inline-block;
+  padding: 2px 7px;
+  line-height: 1.3;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.kycstatus.pendingkyc {
+  background-color: #f2da00dd;
+}
+
+.kycstatus.activekys {
+  background-color: green;
+  color: #ffffff;
+}
+
+.kycstatus.rejectedkyc {
+  background-color: red;
+  color: #ffffff;
+}
+
+.dflexnowrp {
+  display: flex;
+}
+
+
+@media (max-width: 1024px) {
+  .dashboard_content {
+    padding-left: 0px;
+    margin-left: -10px;
+  }
+
+  .profileSecondRow {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 767.7px) {
+  .dashboard_content {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .primaryColor {
+    font-size: 14px;
+  }
+  .secondaryColor {
+    font-size: 14px;
+  }
+  .profileSecondColum {
+    flex-wrap: wrap;
+  }
+  .widthfull {
+    width: 100%;
+  }
+  .paddlft4 {
+    padding-left: 40px;
+    padding-top: 16px;
+  }
+  .profileDetails {
+    margin: 30px 0 10px 0;
+    padding-right: 15px;
+  }
+  .thirdColor label {
+    padding-right: 10px;
+  }
+  .settingContainer {
+    padding: 14px 11px;
+  }
+  .settingGroup {
+    flex-wrap: wrap;
+  }
+  .settingGroup1,
+  .settingGroup2 {
+    width: 100%;
+  }
+
+  .changePasswordGroup {
+    flex-wrap: wrap;
+  }
+
+  .changePassword.settingGroup2 {
+    padding: 0 10px;
+  }
+
+  .settingGroup1 {
+    padding: 0px 10px 30px;
+  }
+  .profileinput {
+    width: calc(100% - 0px);
+  }
+  .supportPage .profileWidth {
+    width: 100%;
+    padding: 22px 22px 22px 22px;
+  }
+  .supportPage .profileWidth:first-child {
+    padding: 22px 22px 22px 22px;
+  }
+  .supportPage .profileWidth:last-child {
+    padding: 12px 15px 22px 15px;
+  }
+  .supportPage .thirdColor label {
+    padding: 10px 0px 0 0px;
+  }
+  .changePassword .settingGroup2 {
+    padding: 0 5px;
+}
+.columnrevers {
+  flex-direction: column-reverse;
+}
+.flexnowrp {
+  flex-wrap: nowrap;
+}
+}
+
+@media (max-width: 575px) {
+  .profileWidth {
+    width: 100%;
+  }
+  .profileSecondRow {
+    padding-left: 0px;
+  }
+  .widthfull {
+    width: auto;
+  }
+  .paddlft4 {
+    padding-left: 10px;
+    padding-top: 0px;
+  }
+
+  .thirdColor {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+  .flexnowrp {
+    flex-wrap: nowrap;
+  }
+  .profileDetails svg {
+    max-width: 78px;
+    width: 78px;
+  }
+  .uploadProfile {
+    width: 30px;
+    height: 30px;
+    margin-left: 58px;
+    margin-top: 23px;
+  }
+  .userProfile {
+    padding-left: 20px;
+  }
+  .fourthColor {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .headingM {
+    padding: 24px 5px 5px;
+  }
+  .pagetabber {
+    padding: 0px 0px;
+    top: 75px;
+  }
+  .pagetabber li a {
+    padding: 11px 10px;
+    font-size: 13px;
+    text-align: center;
+  }
+  .settingContainer h3 {
+    display: block;
+    width: 100%;
+  }
+  .deactive {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .supportPage .profileWidth {
+    width: 100%;
+    padding: 22px 15px 15px 15px;
+  }
+  .supportPage .profileWidth:first-child {
+    padding: 22px 15px 15px 15px;
+  }
+  .supportPage .profileWidth:last-child {
+    padding: 12px 15px 15px 15px;
+  }
+  .kycdataitem {
+    font-size: 15px;
+}
+}

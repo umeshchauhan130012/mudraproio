@@ -1,0 +1,139 @@
+.copyright {
+    border-top: 1px solid #F5F5F5;
+    padding: 25px 0px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.copyright_section {
+    display: block;
+    padding-bottom: 6px;
+}
+
+.footer_wrapper {
+    display: block;
+    padding-top: 50px;
+}
+
+.footer_logo {
+    padding-bottom: 30px;
+}
+
+.footer_main {
+    padding-bottom: 45px;
+}
+
+.footer_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer_menu ul li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.footer_menu ul li a {
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+.footer_menu ul li a:hover {
+    color: #414141;
+}
+
+.footer_address ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer_address ul li span + span {
+    padding-left: 11px;
+}
+
+.lftspace {
+    padding-right: 30px;
+}
+
+.dflexstyle {
+    display: flex;
+    padding: 9px 0px;
+}
+
+.dflexstylewrp {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_social_links {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.copyright .footer_social_links {
+    padding-top: 0px;
+}
+
+.social_items:not(:last-child) {
+    padding-right: 20px;
+}
+
+.social_items a {
+    display: inline-block;
+    padding: 2px 2px;
+}
+
+.social_items.stroke a:hover svg path {
+   stroke: #0164eb;
+}
+
+.social_items.fill a:hover svg path {
+    fill: #0164eb;
+}
+
+.footer_column_title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 24px;
+    padding-top: 15px;
+}
+
+.footer_menu {
+    padding-left: 40px;
+}
+
+.footer_address {
+    padding-left: 40px;
+}
+
+.footerin{
+    display: block;
+}
+
+@media (max-width: 1200px) {
+    .footer_address, .footer_menu {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .copyright .footer_social_links {
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 17px;
+        order: 1;
+    }
+    .footerin {
+        width: 100%;
+        text-align: center;
+        order: 2;
+    }
+    .footer_column_title {
+        padding-top: 35px;
+    }
+}
